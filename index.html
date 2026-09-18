@@ -9,113 +9,75 @@
 <style>
 
 body{
+    font-family: Arial, sans-serif;
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:1.6;
-    background:#f4f7f8;
+    padding:0;
+    background:#f4f6f8;
     color:#333;
 }
 
-/* Navigation */
-
-nav{
+header{
     background:#12343b;
-    padding:15px;
-    position:sticky;
-    top:0;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin:0;
-    padding:0;
+nav{
+    background:#1f5966;
+    padding:15px;
+    text-align:center;
 }
 
 nav a{
     color:white;
     text-decoration:none;
+    margin:0 20px;
     font-weight:bold;
 }
 
-/* Hero Section */
-
-.hero{
-    text-align:center;
-    padding:80px 20px;
-    background:#1e5965;
-    color:white;
-}
-
-.hero h1{
-    font-size:3rem;
-}
-
-.hero p{
-    max-width:800px;
+.container{
+    width:90%;
+    max-width:1000px;
     margin:auto;
-    font-size:1.2rem;
-}
-
-/* Section Styling */
-
-section{
-    padding:60px 10%;
-}
-
-section h2{
-    color:#12343b;
-    border-bottom:3px solid #12343b;
-    padding-bottom:10px;
+    padding:40px 0;
 }
 
 .card{
     background:white;
-    padding:20px;
+    padding:25px;
+    margin-bottom:25px;
     border-radius:10px;
-    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
-    margin-top:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#12343b;
+}
+
+.button{
+    display:inline-block;
+    background:#1f5966;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:5px;
+    margin-top:10px;
 }
 
 footer{
     background:#12343b;
     color:white;
     text-align:center;
-    padding:25px;
-}
-
-.button{
-    display:inline-block;
-    background:#1e5965;
-    color:white;
-    padding:12px 20px;
-    border-radius:5px;
-    text-decoration:none;
-    margin-top:10px;
+    padding:20px;
 }
 
 </style>
-
 </head>
+
 <body>
 
-<!-- Navigation -->
-
-<nav>
-<ul>
-<li>#homeHome</a></li>
-<li>#researchResearch</a></li>
-<li>#projectsProjects</a></li>
-<li>#blogBlog</a></li>
-<li>#supportSupport</a></li>
-</ul>
-</nav>
-
-<!-- Home -->
-
-<section id="home" class="hero">
+<header>
 
 <h1>Neuro Adapt AI</h1>
 
@@ -126,15 +88,25 @@ The future is not humans adapting to technology.
 The future is technology adapting to humanity.
 </p>
 
-</section>
+</header>
 
-<!-- Founder Story -->
+<nav>
 
-<section>
+<a href="index.html">Home</a>
 
-<h2>Founder Story</h2>
+research.htmlResearch</a>
+
+volume1.htmlVolume 1</a>
+
+founder-story.htmlFounder Story</a>
+
+</nav>
+
+<div class="container">
 
 <div class="card">
+
+<h2>Founder Story</h2>
 
 <p>
 The idea for Neuro Adapt AI began with my daughter.
@@ -142,46 +114,39 @@ The idea for Neuro Adapt AI began with my daughter.
 
 <p>
 When she first received her AAC device, I felt hopeful because technology was giving her another way to communicate.
-At the same time, I experienced the challenge many families face when introducing new assistive technology.
 </p>
 
 <p>
-Before the device, my daughter and I built our own communication system through connection. She communicated through gestures, showing me what she needed, routines, and behaviors that I learned to understand over time.
+I began asking a question:
 </p>
 
-<p>
-As I watched her interact with technology, I began asking bigger questions:
-</p>
-
-<ul>
-<li>What if technology could learn her the same way I was learning her?</li>
-<li>What if technology could recognize patterns?</li>
-<li>What if technology could adapt as she grows?</li>
-</ul>
+<blockquote>
+What if technology could learn her the same way I was learning her?
+</blockquote>
 
 <p>
 That question became the foundation of Neuro Adapt AI.
 </p>
 
+founder-story.html
+Read Full Founder Story
+</a>
+
 </div>
-
-</section>
-
-<!-- Mission & Vision -->
-
-<section>
-
-<h2>Mission & Vision</h2>
 
 <div class="card">
 
-<h3>Mission</h3>
+<h2>Mission</h2>
 
 <p>
 To develop adaptive artificial intelligence systems that learn individual patterns and personalize support to improve communication, learning, independence, and quality of life.
 </p>
 
-<h3>Vision</h3>
+</div>
+
+<div class="card">
+
+<h2>Vision</h2>
 
 <p>
 To create a future where technology understands human differences and adapts to support every person's ability to learn, communicate, recover, and thrive.
@@ -189,124 +154,37 @@ To create a future where technology understands human differences and adapts to 
 
 </div>
 
-</section>
-
-<!-- Research -->
-
-<section id="research">
-
-<h2>Research</h2>
-
 <div class="card">
 
-<h3>Volume 1</h3>
-
-<p>
-The first volume introduces the concept of Adaptive Intelligence and how AI can evolve alongside human growth and development.
-</p>
-
-<h3>Research Questions</h3>
+<h2>Research Areas</h2>
 
 <ul>
-<li>Can AI learn individual communication patterns?</li>
-<li>Can adaptive systems improve learning outcomes?</li>
-<li>Can technology evolve alongside changing needs?</li>
-<li>How can adaptive AI remain ethical and transparent?</li>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Human-Computer Interaction</li>
+<li>Accessibility Research</li>
+<li>Educational Technology</li>
+<li>Assistive Technology</li>
+<li>Behavioral Science</li>
 </ul>
 
-<h3>Future Studies</h3>
-
-<ul>
-<li>AAC Communication Research</li>
-<li>Neurodiverse Learning Systems</li>
-<li>Adaptive Educational Support</li>
-<li>Rehabilitation Intelligence Systems</li>
-</ul>
-
-</div>
-
-</section>
-
-<!-- Projects -->
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="card">
-
-<h3>Neuro Adapt Learning</h3>
-<p>Adaptive educational tools for neurodiverse learners.</p>
-
-<h3>Neuro Adapt Care</h3>
-<p>AI support systems for healthcare and caregiving environments.</p>
-
-<h3>Neuro Adapt Rehab</h3>
-<p>Assistive technology supporting rehabilitation and recovery.</p>
-
-<h3>Neuro Adapt Assist</h3>
-<p>Accessibility tools that increase communication and independence.</p>
-
-</div>
-
-</section>
-
-<!-- Blog -->
-
-<section id="blog">
-
-<h2>Blog</h2>
-
-<div class="card">
-
-<ul>
-<li>Research Journal</li>
-<li>Accessibility Insights</li>
-<li>AI Ethics</li>
-<li>Adaptive Intelligence Concepts</li>
-</ul>
-
-<p>
-As your research grows, each blog post can become its own page.
-</p>
-
-</div>
-
-</section>
-
-<!-- Support -->
-
-<section id="support">
-
-<h2>Support Neuro Adapt AI</h2>
-
-<div class="card">
-
-<p>
-Support ongoing research into adaptive intelligence, accessibility, and assistive technology.
-</p>
-
-#
-Donation Page Coming Soon
-</a>
-
-<br><br>
-
-<a class="button" href="mailto:alkendria.mcnair@outlook.com">
-Contact
+research.html
+View Research
 </a>
 
 </div>
 
-</section>
+</div>
 
 <footer>
 
 <p>
-© 2026 Neuro Adapt AI | Founded by Desarae McNair
+© Neuro Adapt AI | Desarae McNair
 </p>
 
 </footer>
 
 </body>
 </html>
+
+
